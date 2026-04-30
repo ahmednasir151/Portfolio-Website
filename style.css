@@ -1,24 +1,19 @@
 :root {
-  /* High Contrast Text */
   --text-main: #f8f9fa;
   --text-secondary: #a0aab2;
   
-  /* Backgrounds */
   --bg-color: #080811;
   --card-bg: rgba(255, 255, 255, 0.03);
   --card-border: rgba(255, 255, 255, 0.08);
   --card-bg-hover: rgba(255, 255, 255, 0.06);
 
-  /* Accents */
   --accent-purple: #7000ff;
   --accent-blue: #0044ff;
   --accent-gradient: linear-gradient(135deg, #6236FF, #0075FF);
   
-  /* Shadows */
   --glow-shadow: 0 0 20px rgba(98, 54, 255, 0.3);
   --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 
-  /* Skill Colors */
   --html-color: #e34f26;
   --css-color: #1572b6;
   --js-color: #d4b800;
@@ -44,7 +39,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   padding: 100px 0;
 }
 
-/* Utilities */
 .gradient-text {
   background: var(--accent-gradient);
   -webkit-background-clip: text;
@@ -75,7 +69,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   background: var(--accent-gradient);
 }
 
-/* Dark Glassmorphism Cards */
 .clean-card {
   background: var(--card-bg);
   backdrop-filter: blur(10px);
@@ -92,7 +85,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Navigation */
 .clean-nav {
   background: rgba(8, 8, 17, 0.8);
   backdrop-filter: blur(20px);
@@ -138,7 +130,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   border-radius: 50%;
 }
 
-/* Hero Section */
 .hero {
   min-height: 100vh;
   position: relative;
@@ -187,7 +178,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   line-height: 1.6;
 }
 
-/* Hero Image & Graphics */
 .hero-image-wrapper {
   position: relative;
   display: flex;
@@ -218,7 +208,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(255,255,255,0.1);
-  background: #111; /* Fallback */
+  background: #111; 
 }
 
 .floating-badge {
@@ -285,7 +275,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   color: var(--text-main);
 }
 
-/* Buttons */
 .btn-primary-custom {
   background: var(--accent-gradient);
   color: #fff;
@@ -319,7 +308,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   color: #fff;
 }
 
-/* About Section */
 .about-main-card {
   padding: 40px;
   height: 100%;
@@ -365,7 +353,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   margin: 0;
 }
 
-/* Timeline */
 .timeline {
   position: relative;
   padding-left: 30px;
@@ -417,7 +404,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   margin: 0;
 }
 
-/* Skills Section */
 .skill-card {
   padding: 25px;
   display: flex;
@@ -463,7 +449,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   min-width: 35px;
 }
 
-/* Specific Skill Colors */
 .skill-html .skill-icon { color: var(--html-color); }
 .skill-html .progress-fill { background: var(--html-color); box-shadow: 0 0 10px rgba(227, 79, 38, 0.5); }
 
@@ -482,7 +467,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .skill-python .skill-icon { color: var(--python-color); }
 .skill-python .progress-fill { background: var(--python-color); box-shadow: 0 0 10px rgba(55, 118, 171, 0.5); }
 
-/* Projects Section */
 .project-filters {
   display: flex;
   gap: 10px;
@@ -613,7 +597,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   color: #fff;
 }
 
-/* Certificates */
 .cert-card-premium {
   padding: 30px;
   position: relative;
@@ -679,7 +662,6 @@ body.light-mode .cert-card-premium:hover {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Section */
 .contact-wrapper {
   display: flex;
   align-items: center;
@@ -751,7 +733,6 @@ body.light-mode .cert-card-premium:hover {
   100% { transform: translateY(-20px) rotate(-10deg); }
 }
 
-/* Forms */
 .custom-input {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--card-border);
@@ -769,7 +750,6 @@ body.light-mode .cert-card-premium:hover {
   color: var(--text-main);
 }
 
-/* Footer */
 .footer {
   border-top: 1px solid var(--card-border);
   padding: 30px 0;
@@ -783,7 +763,6 @@ body.light-mode .cert-card-premium:hover {
   font-size: 0.85rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 991px) {
   .navbar-collapse {
     background: rgba(15, 16, 33, 0.95);
@@ -841,7 +820,6 @@ body.light-mode .cert-card-premium:hover {
   }
 }
 
-/* Skill Pills */
 .skill-pill {
   padding: 8px 18px;
   border-radius: 8px;
@@ -862,7 +840,6 @@ body.light-mode .cert-card-premium:hover {
 .pill-oop { background-color: #0d6efd; }
 .pill-python { background-color: #20c997; color: #000; }
 
-/* Light Mode Styles */
 body.light-mode {
   --bg-color: #f4f6f9;
   --text-main: #111;
