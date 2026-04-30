@@ -390,11 +390,9 @@
 
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Theme Toggle Logic
     const themeToggleBtn = document.querySelector('.theme-toggle-btn');
     const body = document.body;
 
-    // Check saved theme
     if (localStorage.getItem('theme') === 'light') {
       body.classList.add('light-mode');
     }
